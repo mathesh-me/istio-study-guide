@@ -19,11 +19,11 @@ In Microservices architecture, **Developers will build a collection of small ser
 
 Consider the same scenario of e-commerce application. In Microservices architecture, I will build separate services for login, product listing, product details, add to cart, checkout, payment etc. Now if I want to deploy my application, I will deploy each service independently. Now if the add to cart functionality fails, only the add to cart service will fail, the entire application will not fail. Also, if I want to scale my add to cart functionality, I can scale only the add to cart service. And also If I have to fix errors, I have to redeploy only the add to cart service. This is the advantage of Microservices architecture. In this architecture, all the other required services like load balancing, service discovery, monitoring, tracing, networking etc. are built separately for each single service. For example, I have to include load balancing, service discovery, monitoring, tracing, networking etc. for each service.
 
-Now, I have my application built in Microservices architecture. Now I want to make my application more secure, more reliable, more observable, more manageable etc. This is where Service Mesh comes into the picture.
-
 ### Reference Diagram for Monolithic Architecture and Microservices Architecture
 **Look at the diagram below to get good Understanding Monolith and Microservices**
 ![monolith_1-monolith-microservices 70b547e30e30b013051d58a93a6e35e77408a2a8](https://github.com/mathesh-me/istio-study-guide/assets/144098846/51f6d593-a56f-4931-b443-f3ded5fa8528)
+
+Now, I have my application built in Microservices architecture. Now I want to make my application more secure, more reliable, more observable, more manageable etc. This is where Service Mesh comes into the picture.
 
 **Diagram Credit:** AWS
 
