@@ -8,6 +8,9 @@ As we discussed earlier, just like How Service Mesh works, **Istio will deploy a
 
 ### Istio Architecture
 
+![Screenshot 2024-06-24 234030](https://github.com/mathesh-me/istio-study-guide/assets/144098846/b29c89b7-a9a0-46d1-8375-30043f4c1523)
+
+
 Istio architecture consists of the following components:
 
 1. **Data Plane**: The data plane is responsible for handling the network traffic between the microservices. The communication between the proxies we deploy in our application containers is called as data plane.
