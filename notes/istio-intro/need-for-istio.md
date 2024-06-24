@@ -21,6 +21,14 @@ Consider the same scenario of e-commerce application. In Microservices architect
 
 Now, I have my application built in Microservices architecture. Now I want to make my application more secure, more reliable, more observable, more manageable etc. This is where Service Mesh comes into the picture.
 
+### Reference Diagram for Monolithic Architecture and Microservices Architecture
+**Look at the diagram below to get good Understanding Monolith and Microservices**
+![monolith_1-monolith-microservices 70b547e30e30b013051d58a93a6e35e77408a2a8](https://github.com/mathesh-me/istio-study-guide/assets/144098846/51f6d593-a56f-4931-b443-f3ded5fa8528)
+
+**Diagram Credit:** AWS
+
+
+
 ### Service Mesh
 
 **Service Mesh help us to move the communication logic out of the application code from Microservice Architecture**. Communication logic means, service discovery, load balancing, traffic management, security, observability etc. **Service Mesh provides a separate layer for all these functionalities which means, all these communication logic are going to built into single layer and not into the application code. This is the advantage of Service Mesh. That single layer will be deployed as a sidecar container along with the application container. This sidecar container is called as Proxy**. This Proxy will intercept all the incoming and outgoing traffic of the application container. This Proxy will take care of all the communication logic. This is the advantage of Service Mesh. 
