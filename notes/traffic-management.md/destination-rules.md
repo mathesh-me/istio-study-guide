@@ -100,6 +100,6 @@ Now our traffic between the reviews service will be routed to the subsets v1 and
 
 These are just few examples of Destination Rules. We can do many more things using Destination Rules like setting connection pool size, outlier detection, etc.<br>
 
-Reference: [Istio Documentation](https://istio.io/latest/docs/reference/config/networking/destination-rule/)
+**Reference**: [Istio Documentation](https://istio.io/latest/docs/reference/config/networking/destination-rule/)
 
 Date of notes: 23/06/2024
