@@ -45,34 +45,44 @@ Let's consider the Bookinfo application by Istio. It have a services called prod
 Now we are going to start from Virtual Service and Destination Rule for the A/B Testing.
 
 ```yaml
-apiVersion: networking.istio.io/v1alpha3
+apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:
-  name: reviews
+  name: reviews-route
 spec:
   hosts:
   - reviews.prod.svc.cluster.local
   http:
-  - route:
-    - destination:
-        host: reviews.prod.svc.cluster.local
-        subset: v1
-      weight: 80
+  - name: "reviews-v2-routes"
+    match:
+    - uri:
+        prefix: "/wpcatalog"
+    - uri:
+        prefix: "/consumercatalog"
+    rewrite:
+      uri: "/newcatalog"
+    route:
     - destination:
         host: reviews.prod.svc.cluster.local
         subset: v2
-      weight: 20
+      weight: 80
+  - name: "reviews-v1-route"
+    route:
+    - destination:
+        host: reviews.prod.svc.cluster.local
+        subset: v1
+       weight: 20
 ```
 
-In the above example, we are creating a Virtual Service named `reviews`. The Virtual Service will route the traffic with the host `reviews.prod.svc.cluster.local` to the destination service `reviews.prod.svc.cluster.local`. It will route 80% of the traffic to the subset `v1` and 20% of the traffic to the subset `v2`.
+In the above example, we are creating a Virtual Service named `reviews-route`. The Virtual Service will route 80% of the traffic to the subset `v1` and 20% of the traffic to the subset `v2`.
 
 Now we are going to create a Destination Rule for the subsets.
 
 ```yaml
-apiVersion: networking.istio.io/v1alpha3
+apiVersion: networking.istio.io/v1
 kind: DestinationRule
 metadata:
-  name: reviews
+  name: reviews-destination
 spec:
   host: reviews.prod.svc.cluster.local
   subsets:
