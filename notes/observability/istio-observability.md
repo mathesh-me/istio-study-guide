@@ -6,6 +6,9 @@
 
 2. **Tracing**: Istio provides support for distributed tracing using Jaeger, Zipkin, Datadog and Lightstep. Istio enable distributed tracing by envoy sidecar proxy. Distributed tracing tools will help us to individual requests, dependencies, and latencies of the services in the mesh.
 
+![istio-observability](https://github.com/mathesh-me/istio-study-guide/assets/144098846/76aa229d-dd92-494c-b0ac-e57fb907b5af)
+
+
 ### Starting Observability
 
 We can install the observability tools like Prometheus, Grafana, Jaeger, and Kiali using the addons manifest provided by Istio. The addons manifest will install the observability tools in the `istio-system` namespace.
