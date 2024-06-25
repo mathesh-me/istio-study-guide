@@ -1,5 +1,8 @@
 ## Authentication in Istio
 
+![istio-authentication](https://github.com/mathesh-me/istio-study-guide/assets/144098846/5c1a7088-b490-4682-a9dc-19bb3f499fdf)
+
+
 We know in Microservices architecture, Multiple services are communicating with each other. One service must know that the service it is communicating with is the correct service. To make sure that the services are communicating with each other securely, we need to implement some authentication mechanism.<br>
 
 Istio Support two types of authentication mechanisms:
