@@ -30,7 +30,7 @@ Project ideas to work with Istio, you can use these ideas to build a project usi
 
 | No. | Project Idea                                                                                   | GitHub Repository                                                                 |
 |-----|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| 1.  | Will be Updated                | [Istio Project]()                                                                |
+| 1.  | Will be Updated                | Will be added                                                                |
 
 ## Technologies Used
 
