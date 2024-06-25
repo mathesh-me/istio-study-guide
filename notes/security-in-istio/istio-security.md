@@ -5,7 +5,8 @@ When we consider about microservices, Each service in the microservices architec
 
 ### Istio Security Architecture
 
-//Istio Architecture Diagram is added
+![Istio-Security-Architecture](https://github.com/mathesh-me/istio-study-guide/assets/144098846/dd9e261b-a6e9-4740-835d-c4e670accb53)
+
 
 #### Components of Istio Security:
 
