@@ -30,7 +30,7 @@ Project ideas to work with Istio, you can use these ideas to build a project usi
 
 | No. | Project Idea                                                                                   | GitHub Repository                                                                 |
 |-----|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| 1.  | Will be Updated                | Will be added                                                                |
+| 1.  | [Boosting Microservice Reliability: Implementing Circuit Breakers with Istio](https://medium.com/towards-aws/boosting-microservice-reliability-implementin-circuit-breakers-with-istio-026ebe39b273)            | [Click here](https://github.com/mathesh-me/istio-circuit-breaker-implementation)                                                               |
 
 ## Technologies Used
 
